@@ -9,13 +9,13 @@ const windowInnerWidth = window.innerWidth;
 var a = 0;
 
 function positionNav(){
-    if(window.outerHeight > window.innerHeight && windowInnerWidth < 1024){
-        var vh = (window.outerHeight - window.innerHeight) + 100;
+    if(window.outerHeight > window.innerHeight){
+        var vh = (window.outerHeight - window.innerHeight) / window.innerHeight * 100;
     }else{
-        var vh = 50;
+        var vh = 10;
     }
 
-    document.getElementById('navLinks').style.bottom = vh + 'px';
+    document.getElementById('navLinks').style.bottom = vh + '%';
     console.log(vh);
 }
 positionNav();
