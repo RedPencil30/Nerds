@@ -17,6 +17,7 @@ function positionNav(){
     }else{
         alert(window.outerHeight);
         alert(window.innerHeight);
+        alert(document.documentElement.clientHeight);
         var vh = 10;
     }
 
