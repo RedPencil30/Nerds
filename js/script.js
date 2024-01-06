@@ -15,6 +15,8 @@ function positionNav(){
     }
     document.getElementById('navLinks').style.top = vh + 'vh';
     console.log(vh, 'тест 1');
+    alert(document.documentElement.clientHeight);
+    alert(window.innerHeight);
 }
 positionNav();
 
