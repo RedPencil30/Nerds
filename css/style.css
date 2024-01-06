@@ -726,7 +726,7 @@ nav .nav_link {
     .vacansy_right .svg_img_blue {
         width: 100vw;
         left: -1px;
-        bottom: 30px;
+        bottom: 75px;
     }
 
     .footer_info {
@@ -734,7 +734,7 @@ nav .nav_link {
         display: flex;
         right: 0;
         justify-content: space-around;
-        bottom: 0;
+        bottom: 10%;
     }
 
     .footer_left {
