@@ -8,15 +8,13 @@ const bar = document.getElementsByClassName('bar');
 var a = 0;
 
 function positionNav(){
-    if(document.documentElement.clientHeight > window.innerHeight){
-        var vh = -(document.documentElement.clientHeight - window.innerHeight) + 7;
+    if(window.outerHeight > window.innerHeight){
+        var vh = -(window.outerHeight - window.innerHeight);
     }else{
         var vh = -7;
     }
-    document.getElementById('navLinks').style.top = vh + 'vh';
-    console.log(vh, 'тест 1');
-    alert(document.documentElement.clientHeight);
-    alert(window.innerHeight);
+    document.getElementById('navLinks').style.top = vh + 'px';
+    console.log(vh);
 }
 positionNav();
 
