@@ -10,18 +10,14 @@ var a = 0;
 
 function positionNav(){
     if(window.screen.availHeight > window.innerHeight){
-        //var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100 / 1.3;
-        var vh = window.screen.availHeight - window.innerHeight;
-        vh += (window.screen.availHeight - window.innerHeight) / 100 * 10;
+        var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100 / 1.3;
         alert(vh);
-        document.getElementsByClassName('button_row')[0].style.bottom = vh + 'px';
-        document.getElementById('navLinks').style.bottom = vh + 'px';
     }else{
         var vh = 10;
-        document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
-        document.getElementById('navLinks').style.bottom = vh + '%';
     }
 
+    document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
+    document.getElementById('navLinks').style.bottom = vh + '%';
 }
 positionNav();
 
