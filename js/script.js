@@ -9,11 +9,12 @@ var a = 0;
 
 function positionNav(){
     if(window.outerHeight > window.innerHeight){
-        var vh = -(window.outerHeight - window.innerHeight);
+        var vh = (window.outerHeight - window.innerHeight);
     }else{
-        var vh = -7;
+        var vh = 50;
     }
-    document.getElementById('navLinks').style.top = vh + 'px';
+
+    document.getElementById('navLinks').style.bottom = vh + 'px';
     console.log(vh);
 }
 positionNav();
