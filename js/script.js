@@ -5,11 +5,12 @@ const card_back = document.getElementsByClassName('card_svg');
 const head_text = document.getElementsByClassName('nav_link');
 const poloska = document.getElementsByClassName('poloska');
 const bar = document.getElementsByClassName('bar');
+const windowInnerWidth = window.innerWidth;
 var a = 0;
 
 function positionNav(){
-    if(window.outerHeight > window.innerHeight){
-        var vh = (window.outerHeight - window.innerHeight) + 50;
+    if(window.outerHeight > window.innerHeight && windowInnerWidth < 1024){
+        var vh = (window.outerHeight - window.innerHeight) + 100;
     }else{
         var vh = 50;
     }
@@ -18,7 +19,6 @@ function positionNav(){
     console.log(vh);
 }
 positionNav();
-
 
 sliderLine.style.left = '0%';
 sliderLine2.style.left = '0%';
@@ -42,7 +42,7 @@ document.getElementById('one').addEventListener('click', function () {
     for (index = poloska.length - 1; index >= 0; --index) {
         poloska[index].style.borderColor = '#FF5518';
     }
-    for (index = slider_back.length - 1; index >= 0; --index) {
+    for (index = slider_back.length - 3; index >= 0; --index) {
         slider_back[index].style.fill = '#FF5518';
     }
     for (index = card_back.length - 1; index >= 0; --index) {
@@ -69,7 +69,7 @@ document.getElementById('two').addEventListener('click', function () {
     for (index = head_text.length - 1; index >= 0; --index) {
         head_text[index].style.color = '#ffffff';
     }
-    for (index = slider_back.length - 1; index >= 0; --index) {
+    for (index = slider_back.length - 3; index >= 0; --index) {
         slider_back[index].style.fill = '#67564E';
     }
     for (index = card_back.length - 1; index >= 0; --index) {
@@ -115,7 +115,7 @@ let observer0 = new IntersectionObserver(function (entries) {
                 for (index = poloska.length - 1; index >= 0; --index) {
                     poloska[index].style.borderColor = '#C445C2';
                 }
-                for (index = slider_back.length - 1; index >= 0; --index) {
+                for (index = slider_back.length - 3; index >= 0; --index) {
                     slider_back[index].style.fill = '#C445C2';
                 }
                 for (index = card_back.length - 1; index >= 0; --index) {
@@ -133,7 +133,7 @@ let observer0 = new IntersectionObserver(function (entries) {
                 for (index = poloska.length - 1; index >= 0; --index) {
                     poloska[index].style.borderColor = '#67564E';
                 }
-                for (index = slider_back.length - 1; index >= 0; --index) {
+                for (index = slider_back.length - 3; index >= 0; --index) {
                     slider_back[index].style.fill = '#67564E';
                 }
                 for (index = card_back.length - 1; index >= 0; --index) {
@@ -266,7 +266,9 @@ observer2.observe(slider_back[2]);
 let observer3 = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-            document.getElementById('logo').style.color = '#ffffff';
+            if(windowInnerWidth > 1024){
+                 document.getElementById('logo').style.color = '#ffffff';
+            }
             for (index = bar.length - 1; index >= 0; --index) {
                 bar[index].style.backgroundColor = '#201510';
             }
@@ -334,7 +336,7 @@ function handleTouchMove(event) {
                 sliderLine.style.left = '-50%';
                 document.getElementById('one').style.backgroundColor = '#67564E';
                 document.getElementById('two').style.backgroundColor = '#201510';
-                for (index = slider_back.length - 1; index >= 0; --index) {
+                for (index = slider_back.length - 3; index >= 0; --index) {
                     slider_back[index].style.fill = '#67564E';
                 }
                 document.getElementById('logo').style.color = '#ffffff';
@@ -344,6 +346,9 @@ function handleTouchMove(event) {
                 for (index = head_text.length - 1; index >= 0; --index) {
                     head_text[index].style.color = '#ffffff';
                 }
+                for (index = card_back.length - 1; index >= 0; --index) {
+                    card_back[index].style.fill = '#67564E';
+                }
             }
         }
         else if (xRes > 0) {
@@ -352,7 +357,7 @@ function handleTouchMove(event) {
                 sliderLine.style.left = '0%';
                 document.getElementById('one').style.backgroundColor = '#201510';
                 document.getElementById('two').style.backgroundColor = '#67564E';
-                for (index = slider_back.length - 1; index >= 0; --index) {
+                for (index = slider_back.length - 3; index >= 0; --index) {
                     slider_back[index].style.fill = '#FF5518';
                 }
                 document.getElementById('logo').style.color = '#201510';
@@ -361,6 +366,9 @@ function handleTouchMove(event) {
                 }
                 for (index = head_text.length - 1; index >= 0; --index) {
                     head_text[index].style.color = '#201510';
+                }
+                for (index = card_back.length - 1; index >= 0; --index) {
+                    card_back[index].style.fill = '#201510';
                 }
             }
         }
