@@ -14,7 +14,7 @@ function positionNav(){
         var vh = -7;
     }
     document.getElementById('navLinks').style.top = vh + 'vh';
-    console.log(vh);
+    console.log(vh, 'тест 1');
 }
 positionNav();
 
