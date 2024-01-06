@@ -11,13 +11,12 @@ var a = 0;
 function positionNav(){
     if(window.screen.availHeight > window.innerHeight){
         var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100;
-        alert(window.innerHeight);
-        alert(window.screen.availHeight);
         alert(vh);
     }else{
         var vh = 10;
     }
 
+    document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
     document.getElementById('navLinks').style.bottom = vh + '%';
     console.log(vh);
 }
