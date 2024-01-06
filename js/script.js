@@ -11,17 +11,13 @@ var a = 0;
 function positionNav(){
     if(window.screen.availHeight > window.innerHeight){
         var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100 / 1.3;
-        alert(vh);
     }else{
         var vh = 10;
     }
-
     document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
     document.getElementById('navLinks').style.bottom = vh + '%';
     document.getElementById('navLinks2').style.bottom = vh + '%';
-    if(windowInnerWidth < 1024){
-        document.getElementsByClassName('footer_info')[0].style.bottom = vh + '%';
-    }
+    alert('тест 1');
 }
 positionNav();
 
