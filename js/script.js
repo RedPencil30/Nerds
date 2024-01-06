@@ -15,7 +15,8 @@ function positionNav(){
         alert(window.innerHeight);
         alert(vh);
     }else{
-        alert('kek');
+        alert(window.outerHeight);
+        alert(window.innerHeight);
         var vh = 10;
     }
 
