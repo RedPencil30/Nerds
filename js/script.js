@@ -9,15 +9,12 @@ const windowInnerWidth = window.innerWidth;
 var a = 0;
 
 function positionNav(){
-    if(window.outerHeight > window.innerHeight){
-        var vh = (window.outerHeight - window.innerHeight) / window.innerHeight * 100 + 5;
-        alert(window.outerHeight);
+    if(window.screen.availHeight > window.innerHeight){
+        var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100;
         alert(window.innerHeight);
+        alert(window.screen.availHeight);
         alert(vh);
     }else{
-        alert(window.outerHeight);
-        alert(window.innerHeight);
-        alert(document.documentElement.clientHeight);
         var vh = 10;
     }
 
