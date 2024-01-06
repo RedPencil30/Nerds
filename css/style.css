@@ -741,6 +741,10 @@ nav .nav_link {
         margin: 0;
     }
 
+    .slider{
+        padding-bottom: 0;
+    }
+
 }
 
 @media (max-width: 500px) {
