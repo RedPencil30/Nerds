@@ -18,6 +18,10 @@ function positionNav(){
 
     document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
     document.getElementById('navLinks').style.bottom = vh + '%';
+    document.getElementById('navLinks2').style.bottom = vh + '%';
+    if(windowInnerWidth < 1024){
+        document.getElementsByClassName('footer_info')[0].style.bottom = vh + '%';
+    }
 }
 positionNav();
 
