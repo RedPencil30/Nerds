@@ -734,7 +734,7 @@ nav .nav_link {
         display: flex;
         right: 0;
         justify-content: space-around;
-        bottom: 10%;
+        bottom: 2%;
     }
 
     .footer_left {
@@ -744,6 +744,10 @@ nav .nav_link {
     .slider{
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    .vacansy_right{
+        height: 100%;
     }
 
 }
