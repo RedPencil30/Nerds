@@ -10,7 +10,7 @@ var a = 0;
 
 function positionNav(){
     if(window.outerHeight > window.innerHeight){
-        var vh = (window.outerHeight - window.innerHeight) / window.innerHeight * 100;
+        var vh = (window.outerHeight - window.innerHeight) / window.innerHeight * 100 + 2;
     }else{
         var vh = 10;
     }
