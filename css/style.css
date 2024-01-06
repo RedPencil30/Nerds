@@ -151,7 +151,6 @@ header svg {
     display: flex;
     align-items: center;
     background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(5px);
     border-radius: 15px;
 }
 
@@ -186,7 +185,6 @@ header svg {
     font-size: calc(var(--index)*2);
     white-space: normal;
     background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(8px);
     border-radius: 15px;
 }
 
