@@ -7,6 +7,18 @@ const poloska = document.getElementsByClassName('poloska');
 const bar = document.getElementsByClassName('bar');
 var a = 0;
 
+function positionNav(){
+    if(document.documentElement.clientHeight > window.innerHeight){
+        var vh = -(document.documentElement.clientHeight - window.innerHeight) - 7;
+    }else{
+        var vh = -7;
+    }
+    document.getElementById('navLinks').style.top = vh + 'vh';
+    console.log(vh);
+}
+positionNav();
+
+
 sliderLine.style.left = '0%';
 sliderLine2.style.left = '0%';
 
