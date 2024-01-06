@@ -119,7 +119,7 @@ header {
 }
 
 header svg {
-    width: calc(var(--index)*2.5);
+    width: calc(var(--index)*20.5);
 }
 
 .img_nerds {
