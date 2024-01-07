@@ -9,16 +9,12 @@ const windowInnerWidth = window.innerWidth;
 var a = 0;
 
 function positionNav(){
-     if(window.screen.availHeight > window.innerHeight){
-         var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100 / 1.2;
-     }else{
-         var vh = 10;
+    if(window.screen.availHeight > window.innerHeight){
+        var vh = (window.screen.availHeight - window.innerHeight) / window.innerHeight * 100 / 1.3;
+    }else{
+        var vh = 10;
     }
-    //var vh = window.innerHeight * 0.15;
-    document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
     document.getElementById('navLinks').style.bottom = vh + '%';
-    document.getElementById('navLinks2').style.bottom = vh + '%';
-    //alert(vh);
 }
 positionNav();
 
