@@ -69,7 +69,7 @@ a {
     width: 100vw;
     position: relative;
     z-index: 100;
-    bottom: -15vh;
+    bottom: 15vh; 
     text-align: right;
 }
 
@@ -232,6 +232,10 @@ header svg {
 .uslugi {
     text-align: right;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .svg_img_blue {
@@ -251,10 +255,10 @@ header svg {
 .cards_uslug {
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 100vw;
-    top: 20vh;
+    margin-bottom: calc(var(--index)*2);
 }
 
 .card_uslug {
@@ -294,8 +298,7 @@ header svg {
     display: flex;
     justify-content: center;
     width: 100vw;
-    position: absolute;
-    bottom: 10vh;
+    position: relative;
     z-index: 1;
 }
 
@@ -318,6 +321,9 @@ h1 {
     position: relative;
     width: 200%;
     min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .review_svg svg {
@@ -529,7 +535,7 @@ nav .nav_link {
 
     #navLinks,
     #navLinks2 {
-        bottom: -15vh;
+        bottom: 15vh; 
     }
 
     .card_uslug,
@@ -631,6 +637,7 @@ nav .nav_link {
 
     .cards_uslug {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .card_uslug {
