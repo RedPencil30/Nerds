@@ -15,9 +15,9 @@ function positionNav(){
          var vh = 10;
     }
     //var vh = window.innerHeight * 0.15;
-    document.getElementsByClassName('button_row')[0].style.bottom = vh + 'px';
-    document.getElementById('navLinks').style.bottom = vh + 'px';
-    document.getElementById('navLinks2').style.bottom = vh + 'px';
+    document.getElementsByClassName('button_row')[0].style.bottom = vh + '%';
+    document.getElementById('navLinks').style.bottom = vh + '%';
+    document.getElementById('navLinks2').style.bottom = vh + '%';
     //alert(vh);
 }
 positionNav();
