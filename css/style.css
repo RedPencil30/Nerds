@@ -750,6 +750,11 @@ nav .nav_link {
         height: 100%;
     }
 
+    .reviews{
+        padding-bottom: 0 !important;
+        height: 90vh;
+    }
+
 }
 
 @media (max-width: 500px) {
