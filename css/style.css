@@ -706,6 +706,8 @@ nav .nav_link {
 
     #vacansy {
         flex-direction: column;
+        padding-bottom: 0;
+        padding-top: 20vh;
     }
 
     #vacansy h1 {
@@ -724,17 +726,25 @@ nav .nav_link {
     }
 
     .vacansy_right .svg_img_blue {
+        height: 100%;
         width: 100vw;
         left: -1px;
-        bottom: 30px;
+        bottom: 0;
+        position: absolute;
     }
+
+    .vacansy_right .svg_img_blue svg{
+        height: 100%;
+    }
+
 
     .footer_info {
         width: 100vw;
         display: flex;
         right: 0;
         justify-content: space-around;
-        bottom: 2%;
+        bottom: 0;
+        position: absolute;
     }
 
     .footer_left {
@@ -747,6 +757,8 @@ nav .nav_link {
     }
 
     .vacansy_right{
+        position: relative;
+        bottom: 0;
         height: 100%;
     }
 
