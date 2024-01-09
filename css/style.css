@@ -392,7 +392,7 @@ h1 {
 .footer_info {
     position: absolute;
     z-index: 1;
-    bottom: 0;
+    bottom: -80px;
     right: 70px;
 }
 
@@ -713,8 +713,8 @@ nav .nav_link {
 
     #vacansy {
         flex-direction: column;
-        padding-bottom: 0;
-        padding-top: 20vh;
+        padding-bottom: 10vh;
+        padding-top: 10vh;
     }
 
     #vacansy h1 {
