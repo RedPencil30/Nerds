@@ -27,5 +27,17 @@
 
         </div>
     </div>
+    <script>
+        const wrapper = document.getElementsByClassName('wrapper');
+
+        function realHeight(){
+            var windowInnerHeight = window.innerHeight;
+            wrapper[0].style.height = windowInnerHeight;
+            console.log(windowInnerHeight);
+        }
+        realHeight();
+        setInterval(realHeight, 1000);
+
+    </script>
 </body>
 </html>
